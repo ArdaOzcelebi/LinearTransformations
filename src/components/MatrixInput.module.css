@@ -1,0 +1,67 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bracket {
+  font-size: 3.5rem;
+  color: rgba(150, 170, 240, 0.6);
+  line-height: 1;
+  font-weight: 100;
+  user-select: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: rgba(180, 190, 230, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.input {
+  width: 72px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(100, 120, 200, 0.3);
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 15px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.input:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(100, 120, 200, 0.6);
+}
+
+.input:focus {
+  background: rgba(100, 120, 200, 0.12);
+  border-color: rgba(130, 160, 255, 0.8);
+}
+
+/* Hide spinner arrows */
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.input[type='number'] {
+  -moz-appearance: textfield;
+}
