@@ -1,0 +1,122 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Toggles ─────────────────────────────────────────────────────── */
+.toggleGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(100, 120, 200, 0.25);
+  border-radius: 8px;
+  color: rgba(180, 190, 230, 0.55);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.toggle:hover {
+  background: rgba(100, 120, 200, 0.1);
+  color: #e2e8f0;
+}
+
+.toggle.active {
+  background: rgba(100, 120, 200, 0.2);
+  border-color: rgba(130, 160, 255, 0.6);
+  color: #a5b4fc;
+}
+
+.toggleIcon {
+  font-size: 14px;
+}
+
+/* ── Action buttons ──────────────────────────────────────────────── */
+.actionGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.btnPrimary {
+  background: linear-gradient(135deg, #4361ee, #7048e8);
+  color: #fff;
+  border-color: rgba(160, 140, 255, 0.3);
+}
+
+.btnPrimary:not(:disabled):hover {
+  filter: brightness(1.15);
+  box-shadow: 0 4px 20px rgba(100, 80, 220, 0.4);
+}
+
+.btnSecondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(180, 190, 230, 0.7);
+  border-color: rgba(100, 120, 200, 0.25);
+}
+
+.btnSecondary:hover {
+  background: rgba(255, 255, 255, 0.09);
+  color: #e2e8f0;
+}
+
+/* ── Presets ─────────────────────────────────────────────────────── */
+.presets {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.presetsLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(180, 190, 230, 0.35);
+}
+
+.presetsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.preset {
+  padding: 7px 4px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(100, 120, 200, 0.2);
+  border-radius: 7px;
+  color: rgba(180, 190, 230, 0.65);
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.12s;
+  text-align: center;
+}
+
+.preset:hover {
+  background: rgba(100, 120, 200, 0.15);
+  color: #c7d2fe;
+  border-color: rgba(130, 160, 255, 0.4);
+}

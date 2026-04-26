@@ -1,0 +1,174 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 16px;
+  color: #c7d2fe;
+  margin-bottom: -8px;
+}
+
+.desc {
+  font-size: 12px;
+  color: rgba(180, 190, 230, 0.55);
+  line-height: 1.6;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sectionTitle {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(180, 190, 230, 0.4);
+}
+
+.augmented {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.rhsInputs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rhsLabel {
+  font-size: 13px;
+  color: rgba(180, 190, 230, 0.55);
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.rhsInput {
+  width: 54px;
+  padding: 6px 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(100, 120, 200, 0.3);
+  border-radius: 7px;
+  color: #e2e8f0;
+  font-size: 13px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  text-align: center;
+  outline: none;
+}
+
+.rhsInput:focus {
+  border-color: rgba(130, 160, 255, 0.7);
+  background: rgba(100, 120, 200, 0.12);
+}
+
+.rhsInput::-webkit-inner-spin-button,
+.rhsInput::-webkit-outer-spin-button { -webkit-appearance: none; }
+.rhsInput[type='number'] { -moz-appearance: textfield; }
+
+.matTable {
+  border-collapse: collapse;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 13px;
+}
+
+.cell {
+  padding: 6px 10px;
+  text-align: right;
+  color: #e2e8f0;
+  border-bottom: 1px solid rgba(100, 120, 200, 0.1);
+  position: relative;
+}
+
+.rhsCell {
+  color: #74c0fc;
+}
+
+.bar {
+  margin-right: 6px;
+  color: rgba(100, 120, 200, 0.4);
+}
+
+.runBtn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #4361ee, #7048e8);
+  border: 1px solid rgba(160, 140, 255, 0.3);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  align-self: flex-start;
+}
+
+.runBtn:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 4px 20px rgba(100, 80, 220, 0.4);
+}
+
+.stepDesc {
+  padding: 10px 14px;
+  background: rgba(100, 120, 200, 0.1);
+  border: 1px solid rgba(100, 120, 200, 0.25);
+  border-radius: 8px;
+  font-size: 13px;
+  color: #c7d2fe;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.navRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.navBtn {
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(100, 120, 200, 0.25);
+  border-radius: 7px;
+  color: rgba(180, 190, 230, 0.7);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+
+.navBtn:hover:not(:disabled) {
+  background: rgba(100, 120, 200, 0.18);
+  color: #c7d2fe;
+}
+
+.navBtn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 200px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(100, 120, 200, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: background 0.12s;
+  padding: 0;
+}
+
+.dotActive {
+  background: #a5b4fc;
+}
